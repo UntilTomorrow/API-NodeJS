@@ -14,7 +14,7 @@ const db = mysql.createConnection({
   database: 'product'
 });
 //----hash---
-const dataToHash = 'hallodaviddisinni';
+const dataToHash = 'hallotum';
 const hash = crypto.createHash('sha256');
 hash.update(dataToHash);
 const hashedData = hash.digest('hex');
