@@ -56,7 +56,7 @@ db.connect((err) => {
   if (err) {
     console.error('Error connecting to MySQL:', err);
   } else {
-    console.log('Connected to MySQL');
+    console.log('Connected db');
   }
 });
 
@@ -71,6 +71,7 @@ app.get('/api/product', (req, res) => {
     } else {
       res.json(result);
     }
+    console.log(result)
   });
 });
 
